@@ -1,0 +1,31 @@
+import time
+
+print("Asterisk Homework")
+print("1, 2, 3")
+homework = input("Enter a number: ")
+
+if homework == "1":
+    print(" ")
+    for i in range(1, 6):
+        print("*" * i)
+
+elif homework == "2":
+    print(" ")
+
+    name = input("Enter your name: ")
+
+    print("*" * (len(name) + 2))
+    print("*" + name + "*")
+    print("*" * (len(name) + 2))
+
+elif homework == "3":
+    print(" ")
+
+    n = int(input("Enter a number: "))
+
+    print("Number is: " + str(n))
+    print(sum(range(1, n + 1)))
+
+    # Formula: n(n + 1) / 2
+    time.sleep(1)
+    print("Formule is: " + "n * (n + 1) // 2")
